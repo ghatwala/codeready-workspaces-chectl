@@ -30,8 +30,8 @@ node --version && npm --version; yarn --version
 	// sh "whereis node" // /mnt/hudson_workspace/tools/jenkins.plugins.nodejs.tools.NodeJSInstallation/nodejs-10.15.3/
 }
 
-def buildNode = "rhel7-releng" // slave label
-def platforms = "linux-x64,darwin-x64,win32-x64"
+def buildNode = "ppc64le-rhel7-beaker" // slave label
+def platforms = "linux-x64,darwin-x64,win32-x64,linux-ppc64le"
 def CTL_path = "codeready-workspaces-chectl"
 def SHA_CTL = "SHA_CTL"
 def GITHUB_RELEASE_NAME=""
